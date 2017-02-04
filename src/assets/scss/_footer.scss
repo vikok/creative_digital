@@ -5,5 +5,13 @@
 	color:  #ffffff;
 	font-size: 18px;
 	font-weight: 400;
-
+	@include breakpoint(medium down){
+		text-align: center;
+		padding-bottom: 20px;
+	}
+}
+.ba-socials{
+		@include breakpoint(medium down){
+		text-align: center;
+			}
 }

@@ -146,17 +146,18 @@ a{
 		max-width: 370px;
 		border-radius: 4px;
 		background-color:  rgba(235, 235, 235, 0.5);
-		width: 414px;
-		height: 56px;
+
 		textarea{
 		border-radius: 4px;
 		background-color:  rgba(235, 235, 235, 0.5);
-		width: 860px;
-		height: 200px;
 		}
 	}
 	&__button{
 		text-align: center;
+	}
+		@include breakpoint(medium down){
+		text-align: center;
+		padding-bottom: 20px;
 	}
 }
 .map{
