@@ -7,18 +7,31 @@
   $('.ba-slider-2').slick({
     dots: false
   });
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    scrollwheel: false,
-    zoom: 9
-  });
-}
-  initMap();
-  var torreMarker = new google.maps.Marker({
-      position: map,
-      map: map,
-      title: "Torre",
-      icon: 'assets/img/contact/marker.png'
+    window.onload = function(){
+
+        var creativ = {lat: 39.890744, lng: 18.109619};
+        var mapDiv = document.querySelector('.map');
+
+          var map = new google.maps.Map(mapDiv, {
+          zoom: 16,
+          center: creativ
+
+        });
+
+          var marker = new google.maps.Marker({
+          position: creativ,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          icon: 'assets/img/pin.png'
+        });
+
+        google.maps.event.addDomListener(window, 'resize', function(){
+
+          var center = map.getCenter();
+          google.maps.event.trigger(map, 'resize');
+          map.setCenter(center);
+
       });
+
+  };
 })();
