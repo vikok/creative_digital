@@ -164,7 +164,7 @@ a{
 // services
 .ba-design{
 	background-color:  #dbdbdb;
-	height: 400px;
+	height: 402px;
     padding: 100px 0 130px;
 }
 
@@ -179,19 +179,21 @@ a{
 	}
 }
 .ba-cras{
-	height: 400px;
+	background-color:  #ebebeb;
+	height: 402px;
     padding: 100px 0 130px;
 }
 // works
 .ba-works{
 	background: url('../img/works_bg.jpg') 50%;
 	background-size: cover;
-	padding: 30px;
+	padding: 50px;
 	&__title{
 		font-family: $header-font-family;
 		padding-bottom: 60px;
 		color: #fff;
 		font-weight: 600;
+		font-size: 36px;
 	}
 }
 .ba-slider__slide{
@@ -200,18 +202,23 @@ a{
 
 // team
 .ba-team{
-	margin-top: 20px;
+	padding: 50px;
+	&__title{
+		color:  #665f60;
+		font-size: 36px;
+		font-weight: 600;
+	}
 }
 .ba-team-wrap{
 	background-color:  #ffffff;
 	height: 300px;
 	&__title{
-		color:  $primary-color;
+		color:  #9f9acf;
 		font-size: 24px;
 		font-weight: 700;
 		text-transform: uppercase;
 		padding-bottom: 30px;
-    	padding-top: 300px;
+    	padding-top: 150px;
 	}
 	p{
 		font-size: 24px;
@@ -225,7 +232,7 @@ a{
 	}
 }
 .ba-socials {
-	background-color: $primary-color;
+	background-color: #9f9acf;
     padding: 20px 0;
 		a {
 		display: inline-block;
@@ -234,7 +241,7 @@ a{
 		color: #cccccc;
 		background: #ebebeb;
 		border-radius: 50%;
-		border: 1px solid #fff;
+		border: 1px solid #fefefe;
 		text-align: center;
 		padding: 5px;
 		margin-right: 17px;
@@ -308,6 +315,7 @@ a{
 			margin-bottom: 30px;
 			background: rgba(255,255,255, .4);
 			padding: 20px;
+			height: 100%;
 		}
 		a{
 			border-radius: 4px;

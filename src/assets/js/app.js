@@ -9,7 +9,7 @@
   });
     window.onload = function(){
 
-        var creativ = {lat: 39.890744, lng: 18.109619};
+        var creativ = {lat: -7.924430, lng: 112.637898};
         var mapDiv = document.querySelector('.map');
 
           var map = new google.maps.Map(mapDiv, {
